@@ -17,7 +17,7 @@ def Calc_LAB():
     btn = st.button(label="Calculate Marks")
     if btn:
         if any(x is None for x in (mark1, mark2, mark3, Model)):
-            st.error("Enter Valid Inputs!\nAlso Try Check Whether You Have Provided All Inputs!", icon="🚨")
+            st.error("Enter Valid Inputs!\nAlso Try Check Whether You Have Provided All Inputs!", icon="⚠️")
         else:
             FinMarks = round(((mark1 + mark2 + mark3) / 3) * 0.8 + (Model * 0.2), 2)
             Emoji, Res, Stat, Mrks = DispMarks(FinMarks,Sub,60,27)
@@ -44,7 +44,7 @@ def Calc_FAT():
     btn = st.button(label="Calculate Marks")
     if btn:
         if any(x is None for x in (mark1, mark2, mark3, Assign1,Assign2,Assign3)):
-            st.error("Enter Valid Inputs!\nAlso Try Check Whether You Have Provided All Inputs!", icon="🚨")
+            st.error("Enter Valid Inputs!\nAlso Try Check Whether You Have Provided All Inputs!", icon="⚠️")
         else:
             FinMarks = round((((((mark1 + mark2 + mark3) * 0.7) + ((Assign1 + Assign2 + Assign3) * 0.3)) / 3)) * 0.8, 2)
             Emoji, Res, Stat, Mrks = DispMarks(FinMarks,Sub,40,23)

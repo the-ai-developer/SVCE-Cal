@@ -1,3 +1,7 @@
-Pillow==10.2.0
-streamlit==1.31.0
+altair
+numpy
+pandas
+pydeck
+streamlit
+pillow
 time
